@@ -17,6 +17,7 @@ namespace Utasszallitok
         public int Felszallotomeg {  get; set; }
         public double Fesztav {  get; set; }
         public string Kategorianev { get; set; }
+        //DateTime createAt = DateTime.ParseExact(v[8], "yyyy-MM-dd", null);
 
         public Repulogep(string sor)
         {
