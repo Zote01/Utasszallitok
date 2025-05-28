@@ -17,7 +17,6 @@ namespace Utasszallitok
         public int Felszallotomeg {  get; set; }
         public double Fesztav {  get; set; }
         public string Kategorianev { get; set; }
-        //DateTime createAt = DateTime.ParseExact(v[8], "yyyy-MM-dd", null);
 
         public Repulogep(string sor)
         {
@@ -30,6 +29,7 @@ namespace Utasszallitok
             Utazosebesseg = int.Parse(v[4]);
             Felszallotomeg = int.Parse(v[5]);
             Fesztav = double.Parse(v[6]);
+                    //DateTime createAt = DateTime.ParseExact(v[8], "yyyy-MM-dd", null);
             Kategorianev = new Sebessegkategoria(Utazosebesseg).Kategorianev;
         }
         public int GetMaxUtas()
